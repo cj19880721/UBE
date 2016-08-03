@@ -1,8 +1,8 @@
 package ube.user.register.action;
 
-import ube.user.bean.User;
-import ube.user.impl.service.register.UserRegisterImpl;
-import ube.user.itf.register.service.IUserRegister;
+import ube.user.register.bean.User;
+import ube.user.register.impl.service.UserRegisterImpl;
+import ube.user.register.itf.service.IUserRegister;
 
 import com.opensymphony.xwork2.Action;
 import com.opensymphony.xwork2.ActionSupport;

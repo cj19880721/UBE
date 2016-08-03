@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	<!-- 	代码<generator class="native"></generator>说明将根据本地数据库的设置来创建userId，
+		如MySQL中将表user的userId设置为自动增长， 则在保存记录是，userId将自动增长。
+		对于需要在程序中指定主键的值，则将generator的class属性设置为assigned。 --> 
+<hibernate-mapping package="ube.user.register.bean">
+	<class name="User" table="sm_user">
+		<id name="userid" column="userid">
+			<generator>native</generator>
+		</id>
+		<property name="username" column="username" type="java.lang.string" not-null="true" length=16/>
+		<property name="password" column="password" type="java.lang.string" not-null="true" length=16/>
+		<property name="gender" column="gender" type="java.lang.Integer" length=5/>	
+	</class>
+</hibernate-mapping>
+    
